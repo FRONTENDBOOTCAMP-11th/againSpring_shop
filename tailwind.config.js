@@ -1,11 +1,17 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        gowun: ['GowunBatang', 'serif'], // GowunBatang 추가
+      },
+      colors: {
+        primary: "#90BE6D",
+        secondary: "#BC9F8B",
+      },
+    },
   },
   plugins: [],
-}
+};

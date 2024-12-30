@@ -1,18 +1,14 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home'; // default로 가져오기
-import About from './pages/About'; // default로 가져오기
+import Footer from './components/Footer';
+import Header from './components/Header';
+
 
 const App = () => {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <div>
+      <Header />
+      {/* 레이아웃 들어갈 곳 */}
+      <Footer />
+    </div>
   );
 };
 
