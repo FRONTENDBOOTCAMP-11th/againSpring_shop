@@ -13,7 +13,7 @@ function Login() {
           </div>
 
           <div className="login_wrap">
-            <form className="submitForm">
+            <form>
               <div className="userInput">
                 <div className="field">
                   <input id="email" type="text" placeholder="아이디" />
@@ -29,11 +29,21 @@ function Login() {
                 카카오톡으로 시작하기
               </button>
 
-              <label className="checkbox">
+              <label className="choice">
                 <input type="checkbox" />
                 자동 로그인
               </label>
-              {/* <img src="src/pages/user/icons/emptybox.svg" /> */}
+
+              <ul className="find_wrap">
+                <li className="signUp">
+                  <a>회원가입</a> ｜
+                </li>
+                <li>
+                  <div className="find_text">
+                    <a>아이디</a> · <a>비밀번호</a> 찾기
+                  </div>
+                </li>
+              </ul>
             </form>
           </div>
         </div>
