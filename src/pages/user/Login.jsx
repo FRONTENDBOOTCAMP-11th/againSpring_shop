@@ -30,14 +30,6 @@ function Login() {
                 </button>
               </div>
 
-              {/* <label
-                htmlFor="checkbox"
-                className="flex items-center gap-3 mt-8 before:w-[20px] before:h-[20px] before:inline-block before:content-[''] before:bg-[url('./icons/emptybox.svg')] peer-checked:before:bg-[url('./icons/checkbox.svg')]"
-              >
-                <input type="checkbox" id="checkbox" className="peer" />
-                자동 로그인
-              </label> */}
-
               <input type="checkbox" id="checkbox" className="peer" />
               <label
                 htmlFor="checkbox"
