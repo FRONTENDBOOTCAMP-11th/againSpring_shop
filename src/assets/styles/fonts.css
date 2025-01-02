@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'GowunBatang-Bold';
+  src: url('../fonts/GowunBatang-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('../fonts/GowunBatang-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 글꼴 설정 */
+html, body {
+  font-family: 'GowunBatang-Regular', Arial, sans-serif;
+}

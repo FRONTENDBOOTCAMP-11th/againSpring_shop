@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useMenuStore from "./store";
+import useMenuStore from "../store/menuStore";
 
 const Header = () => {
   const { activeMenu, setActiveMenu } = useMenuStore();
@@ -27,7 +27,6 @@ const Header = () => {
         <img src="/public/images/logo.png" alt="logo" className="w-12 h-12" />
       </div>
 
-      {/* Navigation */}
       <nav className="w-full">
         <div className="flex justify-center space-x-8">
           {menuItems.map((item, index) => (
@@ -55,7 +54,6 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Right Utilities */}
       <div className="absolute top-4 right-6 flex space-x-4">
         <a href="/login" className="text-gray-700 hover:text-secondary">로그인</a>
         <a href="/profile" className="text-gray-700 hover:text-secondary">

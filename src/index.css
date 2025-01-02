@@ -1,16 +1,11 @@
+@import './assets/styles/fonts.css';
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'GowunBatang';
-  src: url('/src/assets/fonts/GowunBatang-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* 기본적으로 HTML과 body에 적용 */
+/* 공통 디자인 설정 */
 html, body {
-  font-family: 'GowunBatang', sans-serif;
+  margin: 0;
+  padding: 0;
 }
