@@ -3,10 +3,7 @@ import "./main.css";
 function Login() {
   return (
     <>
-      <header>HEADER</header>
-
-      {/* container는 스타일링으로 건드리지 말기 */}
-      <div className="container">
+      <div className="my-12 mx-auto">
         <div className="content">
           <div className="login_logo_wrap">
             <img src="/public/favicon.png" alt="logo" />
@@ -24,10 +21,12 @@ function Login() {
                 </div>
               </div>
 
-              <button className="button btn-login">로그인</button>
-              <button className="button btn-kakao">
-                카카오톡으로 시작하기
-              </button>
+              <div className="btn-area">
+                <button className="button btn-login">로그인</button>
+                <button className="button btn-kakao">
+                  카카오톡으로 시작하기
+                </button>
+              </div>
 
               <label className="choice">
                 <input type="checkbox" />
@@ -48,8 +47,6 @@ function Login() {
           </div>
         </div>
       </div>
-
-      <footer>FOOTER</footer>
     </>
   );
 }
