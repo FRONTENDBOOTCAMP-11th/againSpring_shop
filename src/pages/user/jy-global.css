@@ -8,16 +8,14 @@
   }
 
   body {
-    font-size: 1.4rem; /* 기본 폰트 크기 설정 */
+    font-size: 1.6rem; /* 기본 폰트 크기 설정 */
     line-height: 1.2; /* 줄 높이 설정 */
   }
 
-  body,
-  p {
+  body {
     @apply m-0;
   }
 
-  ul,
   li {
     @apply m-0 p-0 list-none;
   }
@@ -40,23 +38,12 @@
   }
 
   input[type="text"],
+  input[type="email"],
   input[type="password"] {
-    @apply block w-full h-[40px] px-[14px] box-border;
+    @apply block w-full h-[40px] px-[2px] box-border;
   }
 
   input[type="checkbox"] {
     @apply pointer-events-none absolute;
-  }
-
-  .choice::before {
-    content: "";
-    display: inline-block;
-    background-image: url(./icons/emptybox.svg);
-    width: 20px;
-    height: 20px;
-  }
-
-  .choice input:checked + .choice-label::before {
-    background-image: url(./icons/checkbox.svg);
   }
 }
