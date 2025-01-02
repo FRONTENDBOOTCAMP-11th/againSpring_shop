@@ -1,4 +1,3 @@
-import "./main.css";
 import "./jy-global.css";
 
 function Login() {
@@ -6,7 +5,7 @@ function Login() {
     <>
       <div className="my-12 mx-auto">
         <div className="w-[400px] mx-auto flex flex-col items-center p-[20px_40px_44px] border border-grey-20 rounded-[20px] gap-[44px]">
-          <div className="w-16 aspect-[1/1] object-contain">
+          <div className="w-20 aspect-[1/1] object-contain">
             <img src="/public/favicon.png" alt="logo" />
           </div>
 
