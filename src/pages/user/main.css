@@ -69,8 +69,8 @@ input[type="checkbox"] {
 
   --color-error: #e73434;
 
-  --input-height: 64px;
-  --input-fs: 1.8rem;
+  --input-height: 40px;
+  --input-fs: 1.4rem;
   --input-padding: 14px;
 
   --effect-focus: 0 0 0 4px rgb(131 208 156 / 0.25);
@@ -84,25 +84,29 @@ input[type="checkbox"] {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* commons */
 .button {
   /* font-family: "GowunBatang-Bold"; */
   width: 100%;
-  height: 54px;
-  font-size: 2rem;
+  height: 42px;
+  font-size: 1.6rem;
   border-radius: 12px;
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
 }
 
+.btn-area {
+  margin-top: 25px;
+}
+
 .btn-login {
   background-color: var(--color-primary-40);
   color: var(--color-white);
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .btn-login:focus {
@@ -118,44 +122,38 @@ body {
 }
 
 /* components */
-header,
-footer {
-  box-shadow: inset 0 0 20px green;
-}
-
-.container {
-  width: 100vw;
+.my-container {
+  box-shadow: inset 0 0 20px red;
   margin: 0 auto;
-  padding: 100px;
+  padding: 40px 0;
 }
 
 .content {
-  width: 540px;
+  width: 400px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 70px 44px;
+  padding: 20px 70px 44px;
   border: 2px solid var(--color-grey-20);
   border-radius: 20px;
-  gap: 80px;
+  gap: 44px;
 }
 
 .login_logo_wrap {
-  width: 80px;
+  width: 60px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
 
 .login_wrap {
-  width: 400px;
+  width: 320px;
 }
 
 /* input[type="text"]를 한번 감싸는 역할 */
 .field {
   font-size: var(--input-fs);
-
-  border: 3px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 16px;
 }
 
@@ -167,14 +165,13 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 25px;
 }
 
 .choice {
-  /* font-family: "GowunBatang-Bold"; */
   display: flex;
   gap: 10px;
   margin-top: 32px;
+  align-items: center;
 }
 
 .choice::before {
