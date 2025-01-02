@@ -21,8 +21,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white shadow-md">
-      <div className="flex justify-center py-4">
+    <header className="w-full bg-white shadow-md px-6">
+      <div className="flex justify-center py-6">
         {/* 로고 */}
         <img src="/public/images/logo.png" alt="logo" className="w-12 h-12" />
       </div>
