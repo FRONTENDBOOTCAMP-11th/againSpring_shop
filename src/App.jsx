@@ -1,22 +1,10 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Cart from "./pages/Cart";
-import Login from "./pages/user/Login";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import routes from "./routes";
 
-const App = () => {
-  return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/Cart" element={<Cart />} />
-          <Route path="/Login" element={<Login />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
-};
+const router = createBrowserRouter(routes);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
 
 export default App;
