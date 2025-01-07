@@ -145,27 +145,27 @@ function Cart() {
           {/*🦋🍓 장바구니에 아이템이 있을 때 */}
           {cartItemsList.map((item) => (
             <div className="flex ml-[80px] mt-[50px]">
-              <div className="flex flex-col  mr-[40px] ">
+              <div className="flex flex-col  mr-[10px] ">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-[100px] h-[110px] mb-[30px] object-cover mr-[100px]"
+                  className="w-[80px] h-[90px] mb-[30px] object-cover mr-[32px]"
                 />
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-[100px] h-[110px] mb-[30px] object-cover mr-[100px]"
+                  className="w-[80px] h-[90px] mb-[30px] object-cover mr-[100px]"
                 />
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-[100px] h-[110px] mb-[20px] object-cover mr-[100px]"
+                  className="w-[80px] h-[90px] mb-[20px] object-cover mr-[100px]"
                 />
               </div>
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-[453px] h-[502px] mb-[20px] object-cover mr-[100px]"
+                className="w-[370px] h-[492px] mb-[20px] object-cover mr-[70px]"
               />
 
               <hr className="mt-[12px] mb-[16px]" />
@@ -207,7 +207,7 @@ function Cart() {
                       {/* 상품 이름 */}
 
                       <div className="flex">
-                        <h2 className="text-[15px] font-semibold text-grey-80 mr-[300px]">
+                        <h2 className="text-[15px] font-semibold text-grey-80 mr-[180px]">
                           {item.name}
                         </h2>
 
@@ -248,13 +248,13 @@ function Cart() {
                       </dd>
                     </div>
                     <div className="flex mb-[16px] mt-[70px] ">
-                      <button className="bg-white border-2 border-gray-300  w-[200px] py-[20px] mr-[10px] rounded-md text-[15px] text-center hover:bg-secondary-20 flex justify-center items-center">
+                      <button className="bg-white border-2 border-gray-300  w-[160px] py-[15px] mr-[10px] rounded-md text-[15px] text-center hover:bg-secondary-20 flex justify-center items-center">
                         찜하기
                       </button>
-                      <button className="bg-white border-gray-300 border-2 w-[200px] py-[20px] mr-[10px] rounded-md text-[15px] text-center hover:bg-secondary-20 flex justify-center items-center">
+                      <button className="bg-white border-gray-300 border-2 w-[160px] py-[15px] mr-[10px] rounded-md text-[15px] text-center hover:bg-secondary-20 flex justify-center items-center">
                         장바구니
                       </button>
-                      <button className="bg-secondary-10 border-gray-300 border-2 w-[200px] py-[20px] mr-[10px] rounded-md text-[15px] text-center hover:bg-secondary-20 flex justify-center items-center">
+                      <button className="bg-secondary-10 border-gray-300 border-2 w-[160px] py-[15px] mr-[10px] rounded-md text-[15px] text-center hover:bg-secondary-20 flex justify-center items-center">
                         구매하기
                       </button>
                     </div>
@@ -265,12 +265,10 @@ function Cart() {
           ))}
           {/*🦋🍓*/}
 
-          <hr className="my-[16px]" />
-
           {/*👽제품상세 탭 */}
           <div>
             {/* 탭 네비게이션 */}
-            <div className="flex  ">
+            <div className="flex mt-[80px] ">
               {["상세정보", "구매안내", "상품후기", "QnA"].map((tab) => (
                 <div
                   key={tab}
