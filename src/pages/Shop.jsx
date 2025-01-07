@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import useMenuStore from "../store/menuStore";
 function Cart() {
   //더미 상품 데이터
@@ -48,6 +49,7 @@ function Cart() {
   ];
 
   const [cartItemsList] = useState(dummyItems);
+  const navigate = useNavigate();
 
   const shippingCost = 3000; //배송비
   const totalPrice = cartItemsList.reduce(
@@ -128,30 +130,33 @@ function Cart() {
         </div>
         {/* 상단 헤더와 본문을 구분하는 수평선 */}
         <hr className="mb-0 border-t border-grey-20" />
-        {/* 장바구니에 아이템이 없을 경우 */}
+        {/* 상품목록에 아이템이 없을 경우 */}
         {cartItemsList.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-[256px]">
-            {/* 장바구니가 비어있을 때 보여지는 이미지 */}
+            {/* 상품목록이 비어있을 때 보여지는 이미지 */}
             <img
               src="/images/Cart1.png"
               alt="Empty Cart"
               className="w-[52px] h-[52px] mb-[20px]"
             />
-            {/* 장바구니가 비어있다는 메시지 */}
+            {/* 상품목록이 비어있다는 메시지 */}
             <p className="text-[18px] font-gowun text-grey-40">
-              장바구니가 비어있습니다.
+              상품목록이 비어있습니다.
             </p>
           </div>
         ) : (
           <div>
-            {/* 🦋🍓장바구니에 아이템이 있을 때 */}
+            {/* 상품목록에 아이템이 있을 때 */}
             <table className="w-full table-auto">
               <tbody className="flex flex-wrap ">
-                {/* 장바구니 아이템들 */}
+                {/* 상품목록 아이템들 */}
                 {cartItemsList.map((item) => (
                   <tr
                     key={item.id}
-                    className="w-1/4 sm:w-1/2 lg:w-1/4 xl:w-1/4 p-2"
+                    className="w-1/4 sm:w-1/2 lg:w-1/4 xl:w-1/4 p-2 cursor-pointer"
+                    onClick={() =>
+                      navigate(`/detail/${item.id}`, { state: item })
+                    }
                   >
                     {/* 상품 정보: 이미지와 이름 */}
                     <td className="flex flex-col items-start py-[20px]">
